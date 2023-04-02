@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  modulename:
+    build:
+      context: modulename
+      args:
+        BASE_IMAGE: ${APP_BASE_IMAGE}
+    image: ${APP_CONTAINER_REPO}/modulename:${APP_VERSION:-latest}
+    container_name: modulename
+    env_file: .env
+    volumes:
+      - ${APP_MODELS_DIR:-./models}:/app/models
+      - ${APP_CERTIFICATES_DIR:-$HOME/.ssh/certificates}:/app/certificates
+    entrypoint: /app/bin/start-modulename.sh

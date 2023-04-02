@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  modulename:
+    image: ${APP_CONTAINER_REPO}/modulename:${APP_VERSION}
+    container_name: modulename
+    env_file: .env
+    volumes:
+      - ${APP_MODELS_DIR}:/app/models
+      - ${APP_CERTIFICATES_DIR}:/app/certificates
+    entrypoint: /app/bin/start-modulename.sh
