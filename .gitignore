@@ -1,0 +1,50 @@
+# Python
+**/__pycache__
+*.pyc
+
+# Logs
+*.log
+
+# Environment
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+
+# IDEs
+.idea/
+.vscode/
+!.vscode/launch.json
+
+# Jupyter Notebook
+*.ipynb_checkpoints
+
+# Sphinx documentation
+docs/_build/
+
+# Project-specific
+data/
+output*/
+video/
+
+# Image formats
+*.jpg
+*.jpeg
+*.png
+*.tiff
+*.bmp
+
+# Video formats
+*.h264
+*.h265
+*.mp4
+
+# Large data files
+*.h5
+*.parquet
+*.pqt
+
+# Apple
+*.DS_Store
