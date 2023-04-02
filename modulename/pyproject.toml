@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modulename"
+version = "0.1"
+authors = [
+    {name = "Author One", email = "author.one@domain.com"},
+]
+description = "Modulename description"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = ""}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+modulename = ["logging.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
