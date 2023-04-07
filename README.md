@@ -7,7 +7,6 @@ General features:
 - Test framework based on pytest & DDD concepts.
 - Fully containerized and docker-compose'd application.
 - Makefile as a main entrypoint, which can be exploited by any CICD executor.
-- **Coming soon™:** Sample Jenkinsfile for basic image creation.
 - **Coming soon™:** Fetch script (usable with wget/curl).
 
 ### Notes
